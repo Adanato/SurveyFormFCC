@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang ='en'>
+<head>
+ <title> SurveyFormFCC </title>
+ <meta charset = 'UTF-8'/>
+ <link rel='stylesheet' type='text/css'  href="external.css">
+ <link rel='stylesheet' type='text/css'  href="normalize.css">
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+<body>
+  <h1 id="title" > Adam's Survey Form </h1>
+  <p id="description">In this survey, I'll be seeing how awesome you are! </p>
+  <main>
+    <form id='survey-form'>
+      <label id='name-label' for='name'>Name</label> <br>
+      <input id ='name'type="text" placeholder="Name" required> <br>
+      <label id='email-label'for='email'>Email</label><br>
+      <input id ='email' type="email" placeholder="Email" required><br>
+      <label id='number-label' for='number'>How cool are you?</label><br>
+      <input id ='number' name='number' type="number" min='0' max="100" placeholder="0-100">
+      <br>
+      <label for='coolthings'> What is cool?</label>
+      <select id='dropdown' name='coolthings'>
+         <option value="adam">Adam</option>
+         <option value="notclashofclansplayers">notclashofclansplayers</option>
+         <option value="tacos">Mercedes</option>
+         <option value="cats">Cats</option> 
+      </select>
+      <br>
+      <label for='islandchoice'> Which item would you bring to a deserted island.</label>
+      <input type='radio' value='adam'name='islandchoice'> Adam</input>
+      <input type='radio' value='water'name='islandchoice'> Water</input>
+      <input type='radio' value='food' name='islandchoice'> Food</input>
+      <br>
+      <label for="checkbox">Favorite food</label> <br>
+      <input value='grapes'type='checkbox'> grapes</input>
+      <input value='dogs' type='checkbox'> dogs</input>
+      <input value='sausage' type='checkbox'> sausage</input>
+      <input value='melons' type='checkbox'> melons</input>
+      <input value='fries' type='checkbox'> fries</input>
+      <br>
+      <label for="comments">Comments</label> <br>
+      <textarea id="comments" name="comments" rows="4" cols="50">
+      I thought it was great!
+      </textarea> 
+      <br>
+      <input id='submit' type="submit">
+    </form>
+  </main>
+</body>
